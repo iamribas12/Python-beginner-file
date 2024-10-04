@@ -14,3 +14,11 @@ print(inp)
 
 for i in range(0,len(inp)):
     print(inp[i], end= " ")
+
+#list comprehension:-l
+list = [23,54,64,24,64,633,67]
+list1 = [it for it in list if it>55]
+
+print(list1)
+print(tuple(list1))
+print(set(list1))
