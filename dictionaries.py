@@ -7,4 +7,14 @@ info = {
     "Age": 20
 }
 
-print(info[1])
+print(info["Name"])
+
+tuples = ("sabir","arman","jawed","sahil")
+print(str(tuples))
+
+
+print(type(tuples))
+
+print("sabir" in tuples)
+
+print(40 | 20)
