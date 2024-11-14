@@ -1,4 +1,4 @@
-#Dictionarie: Built-in data type used in python to store multiples data in the form of key and values.
+#Dictionaries: Built-in data type used in python to store multiples data in the form of key and values.
 
 
 info = {
