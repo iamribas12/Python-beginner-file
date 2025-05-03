@@ -38,21 +38,28 @@
 #         print("found")
 #     else:
 #         print("Not found")
-#         print("Not found")
 
 
-class hola:
-    def __init__(self,a,b,c):
-        self.a = a
-        self.b = b
-        self.c = c
-    # @property
-    def avg(self):
-        return (self.a + self.b + self.c) / 3
-    
-dd = hola(4,6,3)
 
-print(dd.avg())
+#Let's Practice >> Multi-level Inheritance oops
 
-dd.a = 5
-print(dd.avg())
+class animal():
+    def __init__(self,type):
+        self.type = type
+
+class cats(animal):
+    color = "Golden"
+    @staticmethod
+    def can_walk():
+        print("Can Walk")
+
+class Persian_cat(cats):
+    def __init__(self,body,type):
+        self.body = body
+        super().__init__(type)
+
+noor = Persian_cat("slim","Domestic")
+
+print(noor.color)
+noor.can_walk()
+ 

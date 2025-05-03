@@ -1,0 +1,1 @@
+create database darul_uloom;

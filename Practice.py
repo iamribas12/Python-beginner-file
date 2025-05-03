@@ -62,22 +62,72 @@
 
 
 #Q: print the multiplication table of a number n.
-n = int(input("enter n:"))
+# n = int(input("enter n:"))
 
-for i in range(1,11):
-    print(i*n)
+# for i in range(1,11):
+#     print(i*n)
 
 
-def fun(n,idx,char):
-    for i in n[idx:]:
-        print(i,end="")
-        if i == char:
-            break
-    print(end=" ")
-dola = "MyNameisSabirAlam"
+# def fun(n,idx,char):
+#     for i in n[idx:]:
+#         print(i,end="")
+#         if i == char:
+#             break
+#     print(end=" ")
+# dola = "MyNameisSabirAlam"
 
-fun(dola,0,"y")
-fun(dola,2,"e")
-fun(dola,6,"s")
-fun(dola,8,"r")
-fun(dola,13,"m")
+# fun(dola,0,"y")
+# fun(dola,2,"e")
+# fun(dola,6,"s")
+# fun(dola,8,"r")
+# fun(dola,13,"m")
+
+# class cricle:
+#     def __init__(self,radius):
+#         self.radius = radius
+    
+#     def area(self):
+#         ar = 22/7*(self.radius**2)
+#         print(f"Area of Circle is {ar}")
+    
+#     def area(self):
+#         ar = 2*(22/7)*(self.radius)
+#         print(f"Area of Circle is {ar}")
+
+# circl1 = cricle(4)
+
+# circl1.area()
+
+
+
+# class employee:
+#     def __init__(self,role,dept,salary):
+#         self.role = role
+#         self.dept = dept
+#         self.salary = salary
+    
+#     def showDetails(self):
+#         print(f"Role:{self.role}\nDepartment: {self.dept}\nSalary: {self.salary}")
+
+# class engineer(employee):
+#     def __init__(self,name,role,dept,salary):
+#         self.name = name
+#         super().__init__(role,dept,salary)
+
+
+# eng1 = engineer("Sabir","Data Analyst","IT",15000)
+
+# eng1.showDetails()
+
+class order:
+    def __init__(self,item,price):
+        self.item = item
+        self.price = price
+
+    def __gt__(self,order2):
+        return self.price > order2.price
+    
+ord1 = order("Oats",225)
+ord2 = order("corn FLakes",205)
+
+print(ord1 > ord2)
